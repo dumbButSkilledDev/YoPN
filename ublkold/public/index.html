@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoPN</title>
+
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/uv/sw.js");
+            });
+        }
+    </script>
+
+    <!-- setup sourcecodepro as main font, make h1 and h2 centered to the page, and make background black and text dark green -->
+    <style>
+        body {
+            font-family: 'Source Code Pro', monospace;
+            background-color: black;
+            color: darkgreen;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>YoPN</h1>
+    <h2>Made by: connor walsh</h2>
+    <h2>Greetz to TitaniumNetwork for ultraviolet (i did not feel like making something like it on my own, broh)</h2>
+    <iframe id="iframeWindow" class="iframeWindow"></iframe>
+    <input type="text" id="urlInput" placeholder="Enter URL here">
+    <button id="searchButton">Search Text</button>
+    
+</body>
+</html>
