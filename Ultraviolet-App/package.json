@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@mercuryworkshop/bare-mux": "^2.1.7"
+  }
+}
